@@ -278,4 +278,8 @@ main {
   .textContainer > ol  {
     margin-top:2rem;
   }
+  .playerContainer {
+    width: 95%;
+    height:95%;
+  }
 }
