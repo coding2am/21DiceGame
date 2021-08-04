@@ -180,7 +180,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
 }
 .rollContainer {
   background-color: rgba(0,0,0,0.5);
@@ -266,12 +265,12 @@ main {
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .textContainer > h3 {
     font-size: 1.6rem;
   }
   .textContainer > ol > li {
-    font-size: 0.5rem;
+    font-size: 1rem;
     letter-spacing:0.25rem;
     margin:0.5rem 0;
   }
@@ -282,4 +281,29 @@ main {
     width: 95%;
     height:95%;
   }
+  .rollContainer {
+    top:87%;
+  }
+  .holdContainer {
+    top:93%;
+  }
+  .newGameContainer {
+    top:10%;
+  }
+  .diceContainer {
+    top:33%;
+  }
+  .closeBtn {
+    right:3%;
+    top:0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .newGameContainer {
+    top:5%;
+  }
+ .startNewGameContainer {
+   top:90%;
+ }
 }
