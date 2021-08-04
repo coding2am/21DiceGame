@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21Dice</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="playerContainer">
+        <!-- player 1 -->
+        <div class="player1">
+          <div class="playerInfo">
+            <h4 class="title">player 1</h4>
+            <div class="score player1Score">0</div>
+          </div>
+          <div class="scoreInfo">
+            <h4 class="title">Current</h4>
+            <div class="currentScore player1CurrentScore">0</div>
+          </div>
+          <div class="player1Turn"><i class="fas fa-dice fa-spin"></i></div>
+          <div class="player1Status"></div>
+        </div>
+        <!-- player 2 -->
+        <div class="player2">
+          <div class="playerInfo">
+            <h4 class="title">player 2</h4>
+            <div class="score player2Score">0</div>
+          </div>
+          <div class="scoreInfo">
+            <h4 class="title">Current</h4>
+            <div class="currentScore player2CurrentScore">0</div>
+          </div>
+          <div class="player2Turn"><i class="fas fa-dice fa-spin"></i></div>
+          <div class="player2Status"></div>
+        </div>
+        <!-- start game -->
+        <div class="startNewGameContainer startGameBtn">
+          <div><i class="fas fa-hand-pointer"></i>Start New Game</div>
+        </div>
+        <!-- Restart game -->
+        <div class="newGameContainer restartGameBtn">
+          <div><i class="fas fa-redo-alt"></i>Rematch</div>
+        </div>
+        <!-- Dice -->
+        <div class="diceContainer">
+          <img id="dice1" src="assets/dice2.png" alt="" />
+          <img id="dice2" src="assets/dice1.png" alt="" />
+        </div>
+        <!-- Roll -->
+        <div class="rollContainer rollBtn">
+          <div><i class="fas fa-dice"></i> Roll Dice</div>
+        </div>
+        <!-- Hold -->
+        <div class="holdContainer holdBtn">
+          <div><i class="fas fa-hand-paper"></i>Hold</div>
+        </div>
+        <!-- Rules Btn -->
+        <div class="rulesContainer rulesBtn">
+          <div><i class="fas fa-exclamation-circle"></i></div>
+        </div>
+        <!-- Rules Slider -->
+        <div class="rulesSliderContainer">
+          <div class="textContainer">
+            <h3>Game Explainition</h3>
+            <ol>
+              <li>
+                This is a 21 dice throw game. ( It's similar to the 21Card Game
+                )
+              </li>
+              <li>You need to get a score of 21 by throwing dices</li>
+              <li>
+                If your score is over the 21 you will be lost and player 2 is an
+                auto winner.
+              </li>
+              <li>If both of you get the same 21 scores it will be a draw.</li>
+            </ol>
+            <span class="closeBtn"><i class="fas fa-times-circle"></i></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
